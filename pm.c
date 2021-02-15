@@ -4,7 +4,7 @@
 const int pins[2] = {1234, 4729};
 const char* passwords[2] = {"Password1", "TopSecret"};
 
-void show_password() {
+int main() {
   char entered_pin[8];
   char user[8];
 
@@ -22,8 +22,4 @@ void show_password() {
   } else {
     printf("Invalid pin for user %s", user);
   }
-}
-
-int main() {
-  show_password();
 }
