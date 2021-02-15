@@ -9,7 +9,7 @@ void show_password() {
   char user[8];
 
   printf("Enter user id:");
-  fgets(user, sizeof(user) * 8, stdin);
+  fgets(user, sizeof(char) * 8, stdin);
 
   int expected_pin = pins[atoi(user)];
 
