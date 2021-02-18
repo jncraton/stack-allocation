@@ -11,6 +11,11 @@ int main() {
   printf("Enter user id:");
   fgets(user, sizeof(char) * 8, stdin);
 
+  if (atoi(user) > 1) {
+    printf("Invalid user %s\n", user);
+    return 1;
+  }
+
   int expected_pin = pins[atoi(user)];
 
   printf("Enter pin:");
